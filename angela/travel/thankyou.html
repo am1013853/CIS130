@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Maraming Salamat!</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9898da6a9a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <img src="images/headerlogo.webp">
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#Places">Destinations</a>
+    <a href="index.html">Gallery</a>
+    <a href="form.html">Contact</a>
+  </nav>
+  <section id="Thanks">
+    <h2>Thank you for your submission! We will be in touch soon!</h2>
+    <p>Thank you for being a part of our community! Your presence is valued, and we can’t wait to embark on this
+      exciting journey together. Get ready for unforgettable moments and plenty of fun!</p>
+    <iframe src="https://giphy.com/embed/hSLNJCra0ckD3UqH0V" width="280" height="280"
+      style="display: block; margin: 0 auto; padding-bottom: 20px;" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+  </section>
+  <div class="container">
+    <h2 style="margin: 15px;">Here's what we received:</h2>
+    <fieldset>
+      <script>
+        printQuery();
+      </script>
+    </fieldset>
+  </div>
+  <p>&nbsp;</p>
+  <footer id="footer">
+    <h3> You may contact us by clicking <a href="mailto:am1013853@otc.edu">here</a>. You can also click on the different
+      icons to visit us on our social media! Mabuhay! </h3>
+    <div class="socialmedia">
+      <a href="https://www.facebook.com/itsmorefuninthePhilippines/" target="_blank"><i
+          class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://x.com/TourismPHL" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.instagram.com/tourism_phl/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+    <p class="clearfix">&nbsp;</p>
+  </footer>
+</body>
+
+</html>

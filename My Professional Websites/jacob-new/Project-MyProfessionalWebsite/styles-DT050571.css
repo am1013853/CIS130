@@ -1,0 +1,216 @@
+:root {
+    --primary-color: #de4d86; /* set the primary color to this one*/
+    --background-color: #e9b44c; /* this is both the secondary and background color */
+    --text-color: #251605; /* this is the text color */
+    --primary-font: "Roboto Slab"; /* set the font to Roboto Slab */
+    --headerfsize: 20px; /* set font to header size*/
+    --lilfont: 16px; /* set font to smaller size*/
+    --Bigfont: 35px; /* set font to larger title size*/
+}
+
+/* changes from the original file: */
+
+/* Header styling */
+.name {
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 5px 5px 5px black;
+}
+
+nav,
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+nav a {
+    font-size: var(--headerfsize);
+    font-family: var(--primary-font);
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+/* Body styling */
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+/* Footer styling */
+footer p {
+    font-family: var(--primary-font);
+    color: black;
+    display: inline-block;
+    padding: 50px;
+}
+
+/* Index page banner styling*/
+main {
+    background-image: url("Images/backgroundimg.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*removed unused class "caps" styling*/
+
+/*Appointment buttons styling*/
+.button { /* removed the flex display */
+    font-family: var(--Primaryfont);
+    font-weight: 700;
+    background-color: var(--background-color);
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: var(--lilfont);
+    cursor: pointer;
+    margin: 10px 44% 10px 44%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px black;
+    float: left;
+}
+
+.button:hover {
+    background-color: white; /* removed the 'section a:hover' and replaced with this one */
+}
+
+/* added a clearfix function for floats */
+.clearfix { 
+    clear: both;
+}
+
+#homep {
+    font-family: var(--primary-font);
+    font-size: var(--Bigfont);
+    text-align: center;
+    color: var(--text-color);
+    margin: auto;
+    width: 80%;
+}
+
+.h1hp {
+    font-family: var(--primary-font);
+    font-size: 60px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.form {
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Products styling */
+.container { /* removed the position static since it is the default positioning */
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto 300px auto;
+}
+
+.box {
+    width: 370px;
+    height: 570px;
+    background: var(--background-color);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box; /* removed overflow hidden */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
+}
+
+.content h3 {
+    margin: 10px 0 10px;
+    padding: 0;
+    color: black;
+    font-size: var(--headerfsize);
+    text-align: center;
+    font-family: var(--primaryfont);
+}
+
+.content ul {
+    font-family: var(--primaryfont);
+    color: black;
+    font-size: var(--lilfont);
+}
+
+.content p {
+    font-family: var(--primaryfont);
+    font-weight: bold;
+    text-align: center;
+}
+
+.vehicle {
+    padding-left: 25px;
+}
+
+.firstn {
+    padding-right: 1px;
+}
+
+.travel_pictures {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: var(--primary-color);
+}
+
+.travel_pictures img {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 206.19px;
+    max-height: 276.91px;
+}
+
+.containerWork {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto 360px auto
+}
+
+.productimg {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* About Us styling */
+.aboutUs img {
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutUs p {
+    font-family: var(--primaryfont);
+    color: var(--text-color);
+    text-align: center;
+    font-size: var(--Bigfont);
+    margin: 50px auto 0px;
+    width: 80%;
+}

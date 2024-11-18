@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Angela Maronsing
+Date: October 28, 2024 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book with Us!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9898da6a9a.js" crossorigin="anonymous"></script> <!-- Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <!-- Main Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- Second Google Font -->
+    <link href="images/Pawprint.png" rel="icon"> <!-- Page Icon -->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"> <img src="images/Happy Tails4.jpg" alt="Logo" class="logo"> </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#AboutUs">About</a>
+            <a href="reservation.html">Reserve</a>
+        </nav>
+    </header>
+
+    <!-- Promotional Message here -->
+    <div id="anchorhere">
+        <p><strong>Limited Time Offer:</strong> 10% Off Pet Boarding!</p>
+    </div>
+
+    <!-- Prominent Image here-->
+    <main>
+        <h1 class="text"> Welcome to Happy Tails Pet Resort!</h1>
+    </main>
+
+    <div class="container">
+        <form action="thankyou.html" method="get">
+            <!-- Contact Information -->
+            <fieldset id="yourinfo">
+                <legend>
+                    <h2>Contact Information</h2>
+                </legend>
+                <!-- Your Name -->
+                <label for="yname">Your Name:
+                    <input autofocus required type="text" name="Your Name" id="yname"
+                        placeholder="Enter your name">
+                </label>
+                <!-- Email -->
+                <label for="email">Email:
+                    <input required type="email" name="Email" id="email" placeholder="Enter your email">
+                </label>
+                <!-- Phone Number -->
+                <label for="number">Number:
+                    <input required type="tel" name="Number" id="number" placeholder="Enter your number">
+                </label>
+            </fieldset>
+            <!-- Pet Information -->
+            <fieldset id="petInfo">
+                <legend>
+                    <h2>Pet Information</h2>
+                </legend>
+                <!-- Pet Name -->
+                <label for="lname">Your Pet's Name:
+                    <input required type="text" name="Pet Name" id="pname" placeholder="Enter your pet's name">
+                </label>
+                <!-- Dropdown Boxes -->
+                <label for="Pet Type" style="display: inline;">Select your type of pet:
+                    <select name="Pet Type" id="PetType">
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Bird">Bird</option>
+                        <option value="Rabbit">Rabbit</option>
+                        <option value="Turtle">Turtle</option>
+                        <option value="Horse">Horse</option>
+                    </select>
+                </label>
+                <br><br>
+                <!-- Checkboxes -->
+                <label for="Checkboxes" style="display: inline"> Please let us know if your pet has any of the
+                    following needs or behaviors: <br>
+                    <label for="allergies"><input type="checkbox" id="allergies" name="NeedsInfo" value="Allergies">
+                        Allergies</label><br>
+                    <label for="medication"><input type="checkbox" id="medication" name="NeedsInfo" value="Medication">
+                        Requires Medication</label><br>
+                    <label for="specialDiet"><input type="checkbox" id="specialDiet" name="NeedsInfo"
+                            value="SpecialDiet">
+                        Special Diet</label><br>
+                    <label for="aggressive"><input type="checkbox" id="aggressive" name="NeedsInfo" value="Aggressive">
+                        Aggressive Behavior</label><br>
+                    <label for="social"><input type="checkbox" id="social" name="NeedsInfo" value="Social">
+                        Good with Other Animals</label><br>
+                    <label for="anxiety"><input type="checkbox" id="anxiety" name="NeedsInfo" value="Anxiety">
+                        Separation Anxiety</label><br>
+                    <label for="vaccinated"><input type="checkbox" id="vaccinated" name="NeedsInfo"
+                        value="Vaccinated">
+                    Up-to-date on Vaccinations</label><br>
+                </label>
+                <!-- Text Area -->
+                <label for="Message">Anything else that we need to know about your pet? Write it here.
+                    <textarea name="Message" id="msg" rows="4" placeholder="Your message here" required></textarea>
+                </label>
+            </fieldset>
+            <!-- Reservation Information -->
+            <fieldset id="reservationInfo">
+                <legend>
+                    <h2>Reservation Information</h2>
+                </legend>
+                <!-- Radio Buttons -->
+                <label for="Radio" style="display: inline-flex;"> Are you providing your pet's food?
+                    <input type="radio" id="Yes" name="PetFoodProvided" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="No" name="PetFoodProvided" value="No">
+                    <label for="no">No</label>
+                </label>
+                <!-- Date Field -->
+                <label for="start">Start date:
+                    <input type="date" id="start" name="BookStart" value="2024-10-28" min="2024-10-28"> </label>
+                <label for="start">End date:
+                    <input type="date" id="end" name="BookEnd" value="2024-10-28" min="2024-10-28"> </label>
+            </fieldset>
+            <!-- Submit Button -->
+            <input id="Button" type="submit" value="Submit">
+        </form>
+    </div>
+    <p>&nbsp;</p>
+    <footer>
+        <p>Any inquiries?</p> <br>
+        <p>Feel free to find us here: Happy Tails Boarding 1234 Bark Ave Furryville, PA 12345.</p>
+        <p>You may also reach out to us online here:<a href="tel:(555)123-4567"><i
+                    class="fa-solid fa-phone-volume"></i></a>
+            <a href="mailto:info@happytailsboarding.com"><i class="fa-solid fa-envelope"></i></a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/9898da6a9a.js" crossorigin="anonymous"></script> <!-- Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+  <!-- Main Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <!-- Second Google Font -->
+  <link href="images/Pawprint.png" rel="icon"> <!-- Page Icon -->
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo"> <img src="images/Happy Tails4.jpg" alt="Logo" class="logo"> </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#AboutUs">About</a>
+      <a href="reservation.html">Reserve</a>
+    </nav>
+  </header>
+
+  <!-- Promotional Message here -->
+  <div id="anchorhere">
+    <p><strong>Limited Time Offer:</strong> 10% Off Pet Boarding!</p>
+  </div>
+
+  <!-- Prominent Image here-->
+  <main>
+    <h1 class="text"> Welcome to Happy Tails Pet Resort!</h1>
+  </main>
+ <!-- Thank You Part-->
+  <div class="container">
+    <section id="Thanks">
+      <h2>Thank you for your submission! We will be in touch soon!</h2>
+      <img src="images/22.jpg" alt="Smiling Dog">
+    </section>
+    <h2 style="margin: 15px;">Here's what we received:</h2>
+    <fieldset>
+      <script>
+        printQuery();
+      </script>
+    </fieldset>
+  </div>
+  <footer>
+    <p>Any inquiries?</p> <br>
+    <p>Feel free to find us here: Happy Tails Boarding 1234 Bark Ave Furryville, PA 12345.</p>
+    <p>You may also reach out to us online here:<a href="tel:(555)123-4567"><i class="fa-solid fa-phone-volume"></i></a>
+      <a href="mailto:info@happytailsboarding.com"><i class="fa-solid fa-envelope"></i></a>
+    </p>
+  </footer>
+</body>
+
+</html>

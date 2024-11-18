@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em vs rem Example</title>
+    <style>
+        html {
+            font-size: 16px; /* Base font size */
+        }
+        .parent {
+            font-size: 2em; /* 2 * 16px = 32px */
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .child-em {
+            font-size: 1.5em; /* 1.5 * 32px = 48px */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .child-rem {
+            font-size: 1.5rem; /* 1.5 * 16px = 24px */
+            background-color: lightcoral;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent">
+    Parent (2em = 32px)
+    <div class="child-em">Child (1.5em = 48px)</div>
+    <div class="child-rem">Child (1.5rem = 24px)</div>
+</div>
+
+</body>
+</html>

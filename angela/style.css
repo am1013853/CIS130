@@ -1,0 +1,108 @@
+        /* Name: Angela Maronsing
+        Date: October 17, 2024 */
+
+        /* google font */
+        .delius-regular {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            color: #3191e5;
+            padding: 60px;
+            text-align: center;
+            font-family: "Delius";
+        }
+
+        nav {
+            background-color: #fce1e4;
+            color: #3191e5;
+            padding: 20px 0px 20px 0px;
+            width: 100%;
+            border: 1px solid #3191e5;
+            text-align: center;
+            font-family: "Delius";
+        }
+
+        nav a:link {
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        nav a:hover {
+            background-color: #7bb7eb;
+        }
+
+        button {
+            background-color: #7bb7eb;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            font-family: "Delius";
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            box-shadow: 12px 12px 2px 1px #3191e5;
+        }
+
+        form {
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body {
+            background-color: #e4f6f8;
+            margin: auto;
+            padding: 20px;
+            width: 50%;
+            
+        }
+        
+        .container {
+            box-shadow: 12px 12px 2px 1px #3191e5;
+        }
+
+        .content {
+            background-color: #fcf4dd;
+            color: #3191e5;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid #3191e5;
+            border-left: 1px solid #3191e5;
+        }
+
+        p, h1, h3 {
+            font-family: "Delius";
+        }
+
+        h3 {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #e8dff5;
+            color: #3191e5;
+            width: 100%;
+            border: 1px solid #3191e5;
+            padding: 20px 0px 20px 0px;
+            text-align: center;
+        }
+
+        /* icons */
+        .fa-solid {
+            color: #3191e5;
+            opacity: .85;
+            padding: 5px;
+          }

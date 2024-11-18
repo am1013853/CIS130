@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> matchalicious </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+    <!-- Angela Maronsing Date: September 20, 2024 !-->
+</head>
+
+<body>
+    <!-- Consistent part of the webpage -->
+    <header class="hero"></header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="product.html">Menu</a>
+            <a href="index.html#About">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <span onclick="openNav()"> &#9776; </span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Menu </a></li>
+            <li><a href="index.html#About"> About </a></li>
+            <li><a class="active" href="contact.html"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <!-- END of consistent part -->
+
+    <main>
+        <div class="container">
+            <section id="action_page">
+                <h1>Thank you for sending a message!</h1>
+                <p>Rest assured that we will get back to you as soon as possible. <br>
+                    hoping to brew something special with you soon! matcha love, ctt.</p>
+                <img src="images/thankyou.png" alt="Matcha Latte with Heart">
+                <form action="index.html"><button type="submit">go back to homepage</button></form>
+                <div class="clearfix"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p style="padding: 10px"> any inquiries? feel free to reach out on our
+            <a href="mailto:am1013853@otc.edu">email</a> |
+            <a href="tel:+14175901275">cell</a> |
+            <a href="https://t.me" target="_blank">telegram</a> |
+            <a href="https://m.me" target="_blank">facebook</a>
+        </p>
+    </footer>
+</body>
+
+</html>

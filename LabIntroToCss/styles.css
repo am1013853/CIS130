@@ -1,0 +1,41 @@
+/* Angela Maronsing
+September 9, 2024*/
+
+body {
+    background-color: #f4bcca;
+}
+
+.banner {
+    background-color: #f4bcca;
+    color: #3191e5;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#unique-section-1 {
+    border: 1px solid #ddd;
+}
+
+.custom-font {
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.rounded-image {
+    border-radius: 20%;
+    box-shadow: 5px 10px #3191e5;
+}
+
+.blue-text {
+    color: #3191e5;
+}
+
+#main-header {
+    font-size: 36px;
+}
+  
+.styled-list {
+    list-style: inside url('images/cinnamoroll-min.png');
+}

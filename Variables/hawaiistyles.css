@@ -1,0 +1,159 @@
+    * {
+    margin:0px;
+    padding:0px; 
+}
+/* Ocean Blue and Yellow Theme Variables */
+:root {
+    --primary-color: #004d80;
+    /* Deep Ocean Blue */
+    --secondary-color: #ffcc00;
+    /* Vibrant Yellow */
+    --background-color: #e0f7fa;
+    /* Light Blue for background */
+    --heading1-size: 40px;
+    /* Size for H1 headings */
+    --heading2-size: 34px;
+    /* Size for H2 headings */
+    --paragraph-size: 18px;
+    /* Font size for paragraphs */
+    --primary-font: 'Pacifico', cursive;
+    /* Fun Hawaiian Font for headings */
+    --secondary-font: 'Arial', sans-serif;
+    /* Body font for general text */
+    --button-font: 16px; 
+    /* Font size for button text */
+    --main-padding: 20px;
+    /* Main padding value used across elements */
+    --small-padding: 10px;
+    /* Smaller padding for compact spaces */
+    --main-margin: 30px;
+    /* Margin value for spacing between elements */
+    --border-width: 2px;
+    /* Border thickness */
+    --border-color: #ffcc00;
+    /* Yellow for border color */
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect for depth */
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Shadow for text to make it stand out */
+    --opacity: .8;
+    /* 50% opacity for hover effects */
+}
+
+
+/* General Styles */
+body {
+    font-family: var(--secondary-font);
+    /* Using secondary font for the whole body */
+    color: var(--primary-color);
+    /* Deep Ocean Blue as the text color */
+    background-color: var(--background-color);
+    /* Light blue as the background color */
+}
+
+header {
+    background-color: var(--background-color);
+    /* Same light blue as the background */
+    color: var(--primary-color);
+    /* Deep Ocean Blue for the text */
+    padding: var(--main-padding);
+    /* Adding padding around the header content */
+    text-align: center;
+    /* Center aligning text in the header */
+    border-bottom: var(--border-width) solid var(--border-color);
+    /* Adding a yellow border at the bottom */
+}
+
+h1, h2, p {
+    margin-bottom: var(--main-margin);
+    /* Applying consistent bottom margin to headings and paragraphs */
+}
+
+/* Shared text shadow for both h1 and h2 to avoid repetition */
+h1, h2 {
+    text-shadow: var(--text-shadow);
+    /* Adding a text shadow to both h1 and h2 for depth */
+}
+
+h1 {
+    font-size: var(--heading1-size);
+    /* Using the defined font size for H1 */
+    font-family: var(--primary-font);
+    /* Fun Hawaiian font for H1 headings */
+}
+
+h2 {
+    font-size: var(--heading2-size);
+    /* Using the defined font size for H2 */
+    font-family: var(--secondary-font);
+    /* Regular font for H2 headings */
+    color: var(--secondary-color);
+    /* Vibrant Yellow for H2 text color */
+}
+
+p {
+    font-size: var(--paragraph-size);
+    /* Using the defined font size for paragraphs */
+    line-height: 1.6;
+    /* Adding space between lines for readability */
+}
+
+.container {
+    padding: var(--main-padding);
+    /* Applying main padding inside the container */
+    margin-bottom: var(--main-margin);
+    /* Adding bottom margin for spacing */
+    text-align: center;
+    /* Centering text within the container */
+}
+
+.button {
+    padding: var(--small-padding);
+    /* Compact padding inside buttons */
+    margin-top: var(--main-padding);
+    /* Adding margin above the button */
+    background-color: var(--secondary-color);
+    /* Yellow background for the button */
+    color: var(--primary-color);
+    /* Deep Ocean Blue text color for contrast */
+    border: none;
+    /* Removing default button borders */
+    cursor: pointer;
+    /* Pointer cursor to indicate a clickable button */
+    font-size: var(--button-font);
+    /* Font size for button text */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+}
+
+.button:hover {
+    opacity: var(--opacity);
+    /* Reducing opacity on hover for a visual effect */
+}
+
+.card {
+    border: var(--border-width) solid var(--border-color);
+    /* Applying yellow border around the card */
+    padding: var(--main-padding);
+    /* Adding padding inside the card */
+    background-color: white;
+    /* White background for card content */
+    border-radius: 10px;
+    /* Rounded corners for the card */
+    box-shadow: var(--box-shadow);
+    /* Adding a subtle shadow for depth */
+}
+
+/* Merged the two img-container img selectors */
+.img-container img {
+    margin-top: var(--main-margin);
+    /* Space above the image */
+    margin-bottom: var(--main-margin);
+    /* Space below the image */
+    box-shadow: var(--box-shadow);
+    /* Adding a shadow around the image for depth */
+    border-radius: 10px;
+    /* Rounded corners for images */
+    max-width: 100%;
+    /* Ensuring the image doesn't exceed its container */
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Harmony Café</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+        }
+        /* Sidebar Style */
+        .sidebar {
+            width: 250px;
+            background-color: #87a96b;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar h1 {
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .sidebar nav a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar nav a:hover {
+            background-color: #4b6043;
+            border-radius: 5px;
+        }
+        .sidebar footer {
+            color: white;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 250px;
+            padding: 50px;
+            width: calc(100% - 250px);
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?matcha-cafe,green-tea');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            color: white;
+            background-color: rgba(135, 169, 107, 0.7);
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            margin-top: 50px;
+        }
+        .menu-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #4b6043;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .menu-item h3 {
+            font-size: 1.5rem;
+            color: #4b6043;
+        }
+        .menu-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            margin-top: 50px;
+        }
+        .gallery-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4b6043;
+            margin-bottom: 30px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Footer */
+        .footer-section {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: #87a96b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h1>Matcha Harmony</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <footer>
+            <p>© 2024 Matcha Harmony Café. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h2>Embrace the Zen of Matcha</h2>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2>Our Matcha Specials</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/400x300/?matcha-latte,green-tea" alt="Matcha Latte">
+                    <h3>Matcha Latte</h3>
+                    <p>Creamy and smooth matcha blended with your choice of milk.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/400x300/?matcha-dessert,green-tea" alt="Matcha Cheesecake">
+                    <h3>Matcha Cheesecake</h3>
+                    <p>Rich and decadent matcha-flavored cheesecake.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/400x300/?iced-matcha,green-tea" alt="Iced Matcha">
+                    <h3>Iced Matcha</h3>
+                    <p>A refreshing, cold-brewed matcha with a splash of citrus.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/400x300/?matcha-bakery" alt="Matcha Croissants">
+                    <h3>Matcha Croissants</h3>
+                    <p>Delicate croissants with a touch of matcha flavor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <h2>Matcha Latte Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?matcha-latte,green-tea" alt="Matcha Latte Art">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?matcha,latte-art" alt="Matcha Latte Art">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?matcha-drink,latte" alt="Iced Matcha Latte">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?latte-art,green-tea" alt="Latte Art with Matcha">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?matcha-latte,green-tea-cup" alt="Ceremonial Matcha">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://source.unsplash.com/400x400/?matcha-latte,iced-tea" alt="Cold Matcha Latte">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer-section" id="contact">
+            <p>Find us at your local Matcha Harmony Café!</p>
+        </section>
+    </div>
+
+</body>
+</html>
+

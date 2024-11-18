@@ -1,0 +1,62 @@
+        /* Name: Angela Maronsing
+        Date: September 4, 2024 */
+
+        h1 {
+            color: #3191e5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #bbd7f0;
+            color: #3191e5;
+            font-family: Georgia, serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #7bb7eb;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        #container {
+            text-align: center;
+            display: inline-block;
+        }
+
+        body {
+            background-color: #e4f6f8;
+        }
+
+        .content {
+            background-color: #ffffff;
+            color: #3191e5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Georgia, serif;
+        }
+
+        li {
+            padding: 20px;
+            background-color: #ede1b4;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: #bbd7f0;
+            color: #3191e5;
+            padding: 20px;
+            text-align: center;
+        }

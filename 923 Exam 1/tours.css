@@ -1,0 +1,100 @@
+/* Browser Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Google Font Style */
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Structural Styles */
+body {
+    background-color: #5EA7CF;
+    color: #2484bc;
+    font-family: Arial;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    /* This should center the page horizontally. */
+    background-color: #d5c7a9;
+    text-align: center;
+    box-shadow: 5px 3px 10px grey;
+}
+
+div {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*Header Rules*/
+header {
+    height: 122px;
+    border-bottom: 2px double black;
+}
+
+h1 {
+    font-family: "Shrikhand", serif;
+    padding: 5px;
+}
+
+/* Navigation Styles */
+nav {
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited,
+a:link {
+    color: #2484bc;
+}
+
+nav a:hover {
+    background-color: #fe970a;
+}
+
+/* Footer Styles */
+footer {
+    color: white;
+    background-color: #5EA7CF;
+    border-top: 1px black double;
+    border-bottom: 1px black double;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+footer p {
+    text-align: right;
+    font-weight: bold;
+}
+
+/*Section Styles */
+section {
+    padding: 25px;
+    border-top: 1px black solid;
+    min-height: 200px;
+}
+
+section img {
+    height: 200px;
+    float: right;
+    padding-left: 5px;
+}
+
+.even {
+    background-color: #AEC09A;
+}
+
+.odd {
+    background-color: #dfedef;
+}

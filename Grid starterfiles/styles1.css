@@ -1,0 +1,84 @@
+:root {
+    --radius: 5px;
+    --padding: 10px;
+    --content1: #1F77B4;
+    --content2: #FF7F0E;
+    --content3: #2CA02C;
+    --content4: #D62728;
+    --content5: #9467BD;
+    --content6: #8C564B;
+}
+
+.container {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas:
+        "content1 content2 content2"
+        "content1 content3 content4"
+        "content1 content5 content6"
+}
+
+#content1 {
+    background: var(--content1);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content1;
+}
+
+#content2 {
+    background: var(--content2);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content2;
+}
+
+#content3 {
+    background: var(--content3);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content3;
+
+}
+
+#content4 {
+    background: var(--content4);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content4;
+}
+
+#content5 {
+    background: var(--content5);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content5;
+
+}
+
+#content6 {
+    background: var(--content6);
+    border-radius: var(--radius);
+    padding-top: var(--padding);
+    grid-area: content6;
+
+}
+
+@media (max-width:576px) {
+    .container {
+        grid-template-areas:
+            "content1"
+            "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
+    }
+}

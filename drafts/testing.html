@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar and Navbar Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Container for sidebar and main content */
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #87a96b;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .sidebar h1 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .sidebar nav a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar nav a:hover {
+            background-color: #4b6043;
+            border-radius: 5px;
+        }
+
+        /* Main content area */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navbar styling */
+        .navbar {
+            background-color: #4b6043;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .navbar h2 {
+            margin-left: 20px;
+        }
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar nav ul li {
+            margin-left: 20px;
+        }
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar nav ul li a:hover {
+            color: #d0e0d0;
+        }
+
+        /* Content Area Styling */
+        .content {
+            padding: 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1>My Sidebar</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Top Navbar -->
+            <header class="navbar">
+                <h2>Site Title</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <div class="content">
+                <h1>Welcome to the Content Area</h1>
+                <p>This is where the main content will go.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

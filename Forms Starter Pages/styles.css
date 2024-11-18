@@ -1,0 +1,26 @@
+body {
+  background-image:url(imgs/makeAppt.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  background-color:#508ec7;
+}
+.container {
+  margin:auto;
+  width:80%;
+  background-color: #eeeeee;
+  padding:25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+h2 {text-align: center}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}

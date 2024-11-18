@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Author: Sittie Angela Maronsing
+ Last Edited: August 26,2024 12:45 AM
+ Filename: index.html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all about me.</title>
+    <style>
+        h1 {
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #c8b6f1;
+            color: #000;
+            font-family: Georgia, serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #c8b6f1;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        body {
+            background-image: url("bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            background-color: #F5D491;
+            opacity: 0.75;
+            color: #000;
+            padding: 20px;
+            text-align: center
+        }
+
+        p {
+            font-family: Georgia, serif;
+        }
+
+        footer {
+            background-color: #c8b6f1;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <h1> welcome to my homepage! </h1>
+        </div>
+    </div>
+
+    <img src="img_car.jpg" alt="Car" style="width:100%">
+
+    <div class="w3-container">
+        <nav>
+            <a href="index.html">Main Page</a> | <a href="hobbies.html">Hobbies</a> | <a href="favorites.html">Favorites</a>
+            | <a href="https://my.otc.edu" target="_blank">OTC</a>
+        </nav>
+        <div class="content">
+            <p> <img src="MyPicture.jpg" alt="My Picture" width="200" height="200"
+                    style="vertical-align:middle;margin:50px 0px;">
+            <h3>Hello, kumusta? I'm Angela, a 21 year old girl born and raised in the Philippines. <br> Click on the
+                different buttons below to know more about me! </h3>
+            </p>
+            <button class="button button1"><a href="hobbies.html">hobbies</a></button>
+            <button class="button button2"><a href="favorites.html" target="_blank">favorites</a></button>
+            <button class="button button3"><a href="hobbies.html">people i love</a></button>
+        </div>
+        <footer>
+            <p> any inquiries? feel free to reach out on my
+                <a href="mailto:am1013853@otc.edu">email</a> | <a href="tel:+14175901275">cell</a> | <a
+                    href="https://t.me/eightiesm" target="_blank">telegram</a> | <a href="https://m.me/sittiemaronsing5"
+                    target="_blank">facebook</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    
+    
+</body>
+
+</html>

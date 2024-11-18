@@ -1,0 +1,36 @@
+/* Angela Maronsing
+September 11, 2024 */
+
+* {
+    margin: 20px;
+    padding: 20px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+section {
+    border: 2px black solid
+}
+
+.clearfix {
+    clear: both;
+}
+
+p {
+    padding: 20px;
+}
+
+img {
+    padding: 20px;
+}

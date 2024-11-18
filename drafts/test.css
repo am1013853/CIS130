@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header */
+  header {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+  }
+  
+  /* Sticky Navigation Bar */
+  .sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #004466;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .sticky-nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .sticky-nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .sticky-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .sticky-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Section */
+  #content {
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Floating Image */
+  .float-image {
+    float: right;
+    margin: 10px;
+    width: 350px;
+    border: 2px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Callout Box with Absolute Positioning */
+  .callout-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffefbb;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  

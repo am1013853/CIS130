@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* used google fonts just for fun */
+.atma-regular {
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* setting up the variables mainly for color palette inspired by the colors of the Philippine flag */
+:root {
+  --primary-color: #252C7D;
+  --secondary-color: #B00000;
+  --background-color: #EACE09;
+  --light-color: #FCFBED;
+  --heading-font: "Honk";
+  --main-font: "Atma";
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--main-font);
+  margin: 0;
+}
+
+/* for those elements that used float */
+.clearfix {
+  clear: both;
+}
+
+/* header styling */
+h1 {
+  margin-left: 25px;
+  font-size: 5em;
+}
+
+header {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 270px;
+  width: 100%; /* ensures the header is at full width of the page */
+
+  position: fixed; /* put the position as fixed so it scrolls along with the page as requested */
+  top: 0px; /* puts the navigation bar at the very top of the page as you scroll */
+  /* right and left 0px keeps the header image at full width as you scroll */
+  right: 0px; 
+  left: 0px; 
+  z-index: 10;  /* put it at 10 to make sure that it is at the very top layer */
+}
+
+header img {
+  max-width: 776px;
+  max-height: 247px;
+}
+
+/* navigation styling */
+nav {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 5px grey;
+  padding: 15px;
+
+  font-size: 1.5em;
+  text-align: center;
+
+  position: sticky; /* sticks the navigation bar at the very top and stays there even if it's scrolled at */
+  top: 270px; /* puts the navigation bar at the bottom of the header and is still visible at the top as you scroll */
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  padding: 20px;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+a:link, a:visited {
+  color: var(--background-color);
+}
+
+/* callout box styling */
+.callout-box {
+  top: 290px; /* i placed it below the navigation bar */
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: #ffefbb;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+  position: absolute; /* puts the box at absolute position */
+  z-index: 11; /* i want to make it like a sticky note on top of the navigation at the start of the page */
+}
+
+/* main content styling */
+
+#Places {
+  padding-top: 320px;
+  margin: auto;
+}
+
+#Places p {
+  margin: 15px;
+  padding: 15px;
+}
+
+#Places img {
+  border: var(--secondary-color) 5px;
+  border-style: solid;
+  border-radius: 5px;
+  display: block;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  border-color: var(--primary-color);
+  border-width: 5px;
+  border-style: solid;
+  background-color: var(--light-color);
+  position: relative; /* puts the containers of each place into relative position */
+}
+
+.container p {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.left img {
+  float: left;
+  max-width: 300px;
+  max-height: 600px;
+  margin-right: 20px;
+}
+
+.right img {
+  float: right;
+  max-width: 600px;
+  max-height: 300px;
+  margin-left: 20px;
+}
+
+/* footer styling */
+
+#footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 10px;
+}
+
+#footer h3 {
+  float: left;
+  margin-left: 20px;
+}
+
+.fa-brands {
+  color: var(--secondary-color);
+  opacity: .85;
+  font-size: 2em;
+  padding-right: 5px;
+}
+
+.socialmedia {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+

@@ -1,0 +1,200 @@
+.name {
+    font-family: "Roboto Slab";
+    color: #fffdd0;
+    text-align: center;
+    font-size: 5em;
+    text-shadow: 5px 5px 5px black;
+}
+
+nav,
+footer {
+    background-color: #fffdd0;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+nav a {
+    font-size: 20px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color: white;
+}
+
+body {
+    background-color: #2d545e;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab";
+}
+
+footer p {
+    font-family: "Roboto Slab";
+    color: black;
+    display: inline-block;
+    padding: 50px;
+}
+
+main {
+    background-image: url("Images/backgroundimg.jpg");
+    height: 500px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.caps {
+    font-family: "Roboto Slab";
+    text-align: center;
+    color: black;
+}
+
+.button {
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    background-color: #fffdd0;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 44% 10px 44%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px black;
+}
+
+section a:hover {
+    background-color: white;
+}
+
+.homep {
+    font-family: "Roboto Slab";
+    font-size: 50px;
+    text-align: center;
+    color: #fffdd0;
+    margin: auto;
+    width: 80%;
+}
+
+.h1hp {
+    font-family: "Roboto Slab";
+    font-size: 60px;
+    text-align: center;
+    color: #fffdd0;
+}
+
+.form {
+    font-family: "Roboto Slab";
+    color: #fffdd0;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto 300px auto
+}
+
+.container .box {
+    position: relative;
+    width: 370px;
+    height: 570px;
+    background: #fffdd0;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px black;
+}
+
+.content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Slab";
+}
+
+.content ul {
+    font-family: "Roboto Slab";
+    color: black;
+    font-size: 16px;
+}
+
+.content p {
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    text-align: center;
+}
+
+.vehicle {
+    padding-left: 25px;
+}
+
+.firstn {
+    padding-right: 1px;
+}
+
+.travel_pictures {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    background-color: #2d545e;
+}
+
+.travel_pictures img {
+    background-color: #2d545e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 206.19px;
+    max-height: 276.91px;
+}
+
+.containerWork {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 100px auto 360px auto
+}
+
+.productimg {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.aboutUs {
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutUsp {
+    font-family: "Roboto Slab";
+    color: #fffdd0;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    width: 80%;
+}

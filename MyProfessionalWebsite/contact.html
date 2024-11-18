@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> matchalicious </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png">
+    <!-- Angela Maronsing Date: September 20, 2024 !-->
+</head>
+
+<body>
+    <!-- Consistent part of the webpage -->
+    <header class="hero"></header>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="product.html">Menu</a>
+            <a href="index.html#About">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <span onclick="openNav()"> &#9776; </span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="product.html"> Menu </a></li>
+            <li><a href="index.html#About"> About </a></li>
+            <li><a class="active" href="contact.html"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <!-- END of consistent part -->
+
+    <section>
+
+        <div class="contact clearfix">
+            <h1>contact us!</h1>
+            <p>Want to place an order or simply give feedback? We'd love to hear from you! Reach out to us by clicking on our contact information below!</p>
+            <div class="contact-info clearfix">
+                <img src="images/phone-icon.png" alt="Phone Icon">
+                <h3>Call Us</h3>
+                <p><a href="tel:+123456789">+123-456-789</a></p>
+            </div>
+            <div class="contact-info clearfix">
+                <img src="images/email-icon.png" alt="Email Icon">
+                <h3>Email</h3>
+                <p><a href="mailto:am1013853@otc.edu">hello@matchalicious.com</a></p>
+            </div>
+            <div class="contact-info clearfix">
+                <img src="images/location-icon.png" alt="Location Icon">
+                <h3>Visit Us</h3>
+                <p><a href="https://www.google.com/maps" target="_blank">123 Matcha Lane, Dessert City</a></p>
+            </div>
+        </div>
+            <div class="form clearfix">
+                <h1>drop us a message!</h1>
+                <form action="action_page.html" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required> <br>
+                    <input type="email" name="email" placeholder="Your Email"> <br>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea> <br>
+                    <button type="submit">Send Message</button>
+                </form>
+                <p>hoping to brew something special with you soon! matcha love, ctt.</p>
+            </div>
+    </section>
+    <footer>
+        <p style="padding: 10px"> any inquiries? feel free to reach out on our
+            <a href="mailto:am1013853@otc.edu">email</a> |
+            <a href="tel:+14175901275">cell</a> |
+            <a href="https://t.me" target="_blank">telegram</a> |
+            <a href="https://m.me" target="_blank">facebook</a>
+        </p>
+    </footer>
+</body>
+
+</html>

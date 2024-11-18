@@ -1,0 +1,307 @@
+/*
+Author: Logan Hoover
+Project Professional Website
+Edited by: Angela Maronsing
+
+*/
+
+:root {
+    --primary-color: rgb(5, 58, 5);
+    --secondary-color: rgb(2, 128, 23);
+    --background-color: rgb(213, 223, 231);
+
+    --heading1-size: 40px;
+    --heading2-size: 34px;
+    --paragraph-size: 18px;
+    --primary-font: 'Pacifico', cursive;
+    --secondary-font: "Barlow Condensed", sans-serif;
+
+    --button-font: 16px; 
+    /* Font size for button text */
+    --main-padding: 20px;
+    /* Main padding value used across elements */
+    --small-padding: 10px;
+    /* Smaller padding for compact spaces */
+    --main-margin: 30px;
+    /* Margin value for spacing between elements */
+    --border-width: 2px;
+    /* Border thickness */
+    --border-color: #ffcc00;
+    /* Yellow for border color */
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect for depth */
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Shadow for text to make it stand out */
+    --opacity: .8;
+    /* 50% opacity for hover effects */
+}
+
+/* General Styles */
+body {
+    font-family: var(--secondary-font);
+    /* Using secondary font for the whole body */
+    color: var(--primary-color);
+    /* Deep Ocean Blue as the text color */
+    background-color: var(--background-color);
+    /* Light blue as the background color */
+}
+
+header {
+    background-color: var(--background-color);
+    /* Same light blue as the background */
+    color: var(--primary-color);
+    /* Deep Ocean Blue for the text */
+    padding: var(--main-padding);
+    /* Adding padding around the header content */
+    text-align: center;
+    /* Center aligning text in the header */
+    border-bottom: var(--border-width) solid var(--border-color);
+    /* Adding a yellow border at the bottom */
+}
+
+h1, h2, p {
+    margin-bottom: var(--main-margin);
+    /* Applying consistent bottom margin to headings and paragraphs */
+}
+
+/* Shared text shadow for both h1 and h2 to avoid repetition */
+h1, h2 {
+    text-shadow: var(--text-shadow);
+    /* Adding a text shadow to both h1 and h2 for depth */
+}
+
+h1 {
+    font-size: var(--heading1-size);
+    /* Using the defined font size for H1 */
+    font-family: var(--primary-font);
+    /* Fun Hawaiian font for H1 headings */
+}
+
+h2 {
+    font-size: var(--heading2-size);
+    /* Using the defined font size for H2 */
+    font-family: var(--secondary-font);
+    /* Regular font for H2 headings */
+    color: var(--secondary-color);
+    /* Vibrant Yellow for H2 text color */
+}
+
+p {
+    font-size: var(--paragraph-size);
+    /* Using the defined font size for paragraphs */
+    line-height: 1.6;
+    /* Adding space between lines for readability */
+}
+
+.container {
+    padding: var(--main-padding);
+    /* Applying main padding inside the container */
+    margin-bottom: var(--main-margin);
+    /* Adding bottom margin for spacing */
+    text-align: center;
+    /* Centering text within the container */
+}
+
+.button {
+    padding: var(--small-padding);
+    /* Compact padding inside buttons */
+    margin-top: var(--main-padding);
+    /* Adding margin above the button */
+    background-color: var(--secondary-color);
+    /* Yellow background for the button */
+    color: var(--primary-color);
+    /* Deep Ocean Blue text color for contrast */
+    border: none;
+    /* Removing default button borders */
+    cursor: pointer;
+    /* Pointer cursor to indicate a clickable button */
+    font-size: var(--button-font);
+    /* Font size for button text */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+}
+
+.button:hover {
+    opacity: var(--opacity);
+    /* Reducing opacity on hover for a visual effect */
+}
+
+.card {
+    border: var(--border-width) solid var(--border-color);
+    /* Applying yellow border around the card */
+    padding: var(--main-padding);
+    /* Adding padding inside the card */
+    background-color: white;
+    /* White background for card content */
+    border-radius: 10px;
+    /* Rounded corners for the card */
+    box-shadow: var(--box-shadow);
+    /* Adding a subtle shadow for depth */
+}
+
+/* Merged the two img-container img selectors */
+.img-container img {
+    margin-top: var(--main-margin);
+    /* Space above the image */
+    margin-bottom: var(--main-margin);
+    /* Space below the image */
+    box-shadow: var(--box-shadow);
+    /* Adding a shadow around the image for depth */
+    border-radius: 10px;
+    /* Rounded corners for images */
+    max-width: 100%;
+    /* Ensuring the image doesn't exceed its container */
+}
+
+/* VARIABLES */
+
+body {
+    background-color: rgb(213, 223, 231);
+    color: aliceblue;
+}
+
+/* combined nav and div since they share the same styles for these attributes */
+nav, div {
+    border: 5px solid rgb(2, 128, 23);
+    background-color: rgb(5, 58, 5);
+}
+
+nav {
+    margin: 2% 15% 2% 15%;
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+div {
+    margin-right: 2%;
+    width: 99%;
+}
+
+footer {
+    background-color: rgb(5, 58, 5);
+}
+
+footer p {
+    font-size: 25px;
+    margin-top: 0%;
+}
+
+/* combined h1 and h4 since they share the same styles for this attribute */
+h1, h4 {
+    text-align: center;
+}
+
+p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 18px;
+}
+
+a {
+    color: aliceblue;
+    padding: 50px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+button {
+    background-color: yellow;
+    margin-left: 32.5%;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    padding: 0%;
+    width: 5%;
+    height: 5%;
+    border-radius: 8%;
+}
+
+button:hover {
+    cursor: not-allowed;
+}
+
+img {
+    margin-right: 2%;
+}
+
+#important {
+    font-size: 25px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+}
+
+#logo1 {
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+#logo2 {
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.borderfoot {
+    border: 5px solid rgb(2, 128, 23);
+    margin: auto;
+    text-align: center;
+}
+
+.NAME {
+    color:rgb(2, 128, 23); 
+    text-shadow: 2px 2px rgb(5, 58, 5);
+    font-family: "barlow Condensed", sans-serif;
+    font-size: 50px;
+}
+
+.banner {
+    margin-top: 0;
+    margin-right: .5%;
+    background-image: url(Pics/Shelf.jpg);
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 0%;
+}
+
+.afterbanner {
+    margin-top: 0%;
+}
+
+/* added a few attributes on the paragraphs on the index page to make it not stuck on the left side */
+.afterbanner p, #intro p {
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+}
+
+.hours {
+    text-align: center;
+    font-size: 30px;
+}
+
+.product {
+    float: left;
+    margin-bottom: 1%;
+}
+
+.book {
+    float: left;
+}
+

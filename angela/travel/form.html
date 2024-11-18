@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Love the Philippines!</title>
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9898da6a9a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+  <header>
+    <img src="images/headerlogo.webp">
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#Places">Destinations</a>
+    <a href="index.html">Gallery</a>
+    <a href="form.html">Contact</a>
+  </nav>
+  <section id="ContactUs">
+    <h2>Contact Us!</h2>
+    <p>Kumusta? We'd love to hear from you! Feel free to share
+      with us your thoughts, reactions, and comments below! Hoping for you to travel with us real soon!</p>
+  </section>
+  <div class="container">
+    <form action="thankyou.html" method="get">
+      <fieldset id="info">
+        <legend>
+          <h2>Your Information</h2>
+        </legend>
+        <!-- First Name -->
+        <label for="fname">First Name:
+          <input autofocus required type="text" name="First Name" id="fname" placeholder="Enter your First Name">
+        </label>
+        <!-- Last Name -->
+        <label for="lname">Last Name:
+          <input required type="text" name="Last Name" id="lname" placeholder="Enter your Last Name">
+        </label>
+        <!-- Email -->
+        <label for="email">Email:
+          <input required type="email" name="Email" id="email" placeholder="Enter your Email">
+        </label>
+      </fieldset>
+      <!-- -->
+      <fieldset id="package">
+        <legend>
+          <h2>Survey Form</h2>
+        </legend>
+        <p>We'd love to know your favorite place from our site. Any feedback is appreciated. Please complete the survey
+          below!</p> <br>
+        <!-- Dropdown Boxes -->
+        <label for="Place" style="display: inline;">Choose your least favorite place:
+          <select name="Least Favorite Place" id="LeastFavorite">
+            <optgroup label="Luzon">
+              <option value="Intramuros">Intramuros</option>
+            </optgroup>
+            <optgroup label="Visayas">
+              <option value="Boracay Beach">Boracay Beach</option>
+            </optgroup>
+            <optgroup label="Mindanao">
+              <option value="PH Eagle Center">Philippine Eagle Center</option>
+            </optgroup>
+          </select>
+        </label>
+        <br>
+        <!-- Checkboxes -->
+        <label for="Checkboxes" style="display: inline-flex"> Choose your favorite place/s:
+          <input type="checkbox" id="intra" name="Favorite Place" value="Intramuros">
+          <label for="Intramuros"> Intramuros</label>
+          <input type="checkbox" id="bora" name="Favorite Place" value="Boracay Beach">
+          <label for="Boracay Beach"> Boracay Beach</label>
+          <input type="checkbox" id="pheagle" name="Favorite Place" value="Philippine Eagle Center">
+          <label for="Philippine Eagle Center"> Philippine Eagle Center</label>
+          <input type="checkbox" id="all" name="Favorite Place" value="All of them">
+          <label for="All of them"> All of them</label>
+          <input type="checkbox" id="none" name="Favorite Place" value="None of them">
+          <label for="None of them"> None of them</label>
+        </label>
+        <!-- Radio Buttons -->
+        <label for="Radio" style="display: inline-flex;"> Do you like the places you've seen in this site?: 
+          <input type="radio" id="Yes" name="Like the Places" value="Yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="No" name="Like the Places" value="No">
+          <label for="no">No</label>
+        </label>
+        <!-- Textbox that scrolls from 1-31 -->
+        <label for="Number"> On a scale of 1-31, how likely are you to visit the Philippines? :
+          <input type="number" id="number" name="Likely to Visit" min="1" max="31">
+        </label>
+        <!-- Text Area -->
+        <label for="Message">Suggestions:
+          <textarea name="Message" id="msg" rows="4"
+            placeholder="Want to suggest a place to feature in our blog? Enter your thoughts here." required></textarea>
+        </label>
+      </fieldset>
+      <!-- Submit Button -->
+      <input id="Button" type="submit" value="Submit">
+    </form>
+  </div>
+  <p>&nbsp;</p>
+  <footer id="footer">
+    <h3> You may contact us by clicking <a href="mailto:am1013853@otc.edu">here</a>. You can also click on the different
+      icons to visit us on our social media! Mabuhay! </h3>
+    <div class="socialmedia">
+      <a href="https://www.facebook.com/itsmorefuninthePhilippines/" target="_blank"><i
+          class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://x.com/TourismPHL" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.instagram.com/tourism_phl/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+    <p class="clearfix"></p>
+  </footer>
+</body>
+
+</html>

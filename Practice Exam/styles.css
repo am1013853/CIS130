@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    font-style: Arial;
+}
+
+.shrikhand-regular {
+    font-family: "Shrikhand", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+a:hover {
+    background-color: #84596B;
+    color: #F7F5F8;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Shrikhand';
+}
+
+footer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+section {
+    text-align: left;
+    border-bottom: 2px black solid;
+    padding: 10px;
+    color: #191716;
+}
+
+header {
+    background-color: #603A40;
+    color: #e9e3eb;
+    padding: 25px;
+}
+
+#container {
+    margin: auto;
+    width: 80%;
+    box-shadow: 0px 10px 5px #191716;
+    background-color: #b6a4bc;
+}
+
+.odd {
+    text-align: right;
+    background-color: #e9e3eb;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:link {
+    color: white;
+}
+
+figure {
+    color: black;
+}
